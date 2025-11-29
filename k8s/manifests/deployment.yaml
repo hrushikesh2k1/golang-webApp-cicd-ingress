@@ -1,0 +1,21 @@
+apiVersion: apps/V1
+Kind: Deployment
+metadata:
+  name: go-web-app
+  label:
+    app: go-web-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: go-web-app
+  template:
+    metadata:
+      labels:
+        app: go-web-app
+    spec:
+      containers:
+      - name: go-web-app
+        image: hrushikesh2k1/golang-webapp
+        ports:
+        - containerPort: 8080  
