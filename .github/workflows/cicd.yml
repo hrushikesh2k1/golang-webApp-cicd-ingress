@@ -46,10 +46,6 @@ jobs:
             ${{ env.IMAGE_NAME }}:${{ github.sha }}
             ${{ env.IMAGE_NAME }}:latest
 
-      - name: Install docker 
-        run: |
-          sudo apt install docker.io -y
-
       - name: Check docker installation
         run: |
           sudo docker run hello-world
