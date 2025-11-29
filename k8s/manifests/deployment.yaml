@@ -18,4 +18,6 @@ spec:
       - name: go-web-app
         image: hrushikesh2k1/golang-webapp
         ports:
-        - containerPort: 8080  
+        - containerPort: 8080 
+      imagePullSecrets:
+      - name: regcred
