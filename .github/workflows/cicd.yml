@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/golang-webapp
+      IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/go-web-app
     steps:
       - name: Checkout
         uses: actions/checkout@v4
